@@ -1,1 +1,1 @@
-# aiphotoland
+# aiphotolan
