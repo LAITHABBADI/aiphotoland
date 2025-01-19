@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Photo Restoration Online - Repair & Restore Old Photos | PhotoAI</title>
+    <meta name="description" content="Restore and repair old photos online for free using AI. Advanced photo restoration, enhancement, and reconstruction tools. Transform damaged photos into crystal-clear memories instantly.">
+    <meta name="keywords" content="photo restoration ai free, photo repair ai online, old photo restoration online free, ai photo restoration online free, photo repair online free, old photo enhancement, restore photos ai free">
+    <link rel="canonical" href="https://example.com/photo-restoration">
+    <meta property="og:title" content="Free AI Photo Restoration & Repair Online">
+    <meta property="og:description" content="Restore old and damaged photos for free using AI technology. Transform your memories instantly.">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --background: #f8f9fa;
+            --text: #2b2d42;
+            --gray: #8d99ae;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #fff, #f0f4ff);
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .comparison {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .comparison-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .comparison-card img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .upload-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .upload-box {
+            border: 2px dashed var(--gray);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            background: var(--background);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button.primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .button.secondary {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .features {
+            margin: 4rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonials {
+            background: white;
+            padding: 4rem 0;
+            margin: 4rem 0;
+            border-radius: 20px;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 20px;
+            margin: 4rem 0;
+        }
+
+        .footer {
+            background: var(--text);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .footer a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .comparison-card img {
+                width: 240px;
+                height: 240px;
+            }
+            
+            .upload-section {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">PhotoAI Restore</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#restore">Restore Now</a>
+                <a href="#pricing">Free Trial</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Free AI Photo Restoration & Repair Online</h1>
+                <p>Transform old, damaged photos into crystal-clear memories using advanced AI technology. No signup required - restore photos online for free.</p>
+                <a href="#restore" class="button primary">Start Restoring Photos</a>
+            </section>
+
+            <section class="comparison">
+                <div class="comparison-card">
+                    <img src="/api/placeholder/280/280" alt="Original damaged old photo example">
+                    <p>Original Photo</p>
+                </div>
+                <div class="comparison-card">
+                    <img src="/api/placeholder/280/280" alt="Restored photo using AI technology">
+                    <p>AI-Restored Photo</p>
+                </div>
+            </section>
+
+            <section id="restore" class="upload-section">
+                <h2>Restore Your Photos Now</h2>
+                <p>Upload your old or damaged photos and let our AI work its magic</p>
+                <div class="upload-box">
+                    <button class="button primary">Upload Photo</button>
+                    <p>or drag and drop your photo here</p>
+                </div>
+                <button class="button secondary">Start Free Restoration</button>
+            </section>
+
+            <section id="features" class="features">
+                <h2>Advanced Photo Restoration Tools</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>AI Photo Enhancement</h3>
+                        <p>Automatically enhance photo quality, fix blur, and improve clarity using advanced AI algorithms.</p>
+                        <a href="#" class="button primary">Try Free</a>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Old Photo Repair</h3>
+                        <p>Fix scratches, tears, and damage in old photos. Restore faded colors and missing details.</p>
+                        <a href="#" class="button primary">Try Free</a>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Color Restoration</h3>
+                        <p>Transform black and white photos into vibrant color images using AI colorization.</p>
+                        <a href="#" class="button primary">Try Free</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Ready to Restore Your Precious Memories?</h2>
+                <p>Join thousands of satisfied users who have restored their old photos for free</p>
+                <a href="#restore" class="button secondary">Start Free Trial</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>PhotoAI Restore</h3>
+                <p>Free online photo restoration powered by AI</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#">Home</a><br>
+                <a href="#">Features</a><br>
+                <a href="#">Pricing</a>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a><br>
+                <a href="#">Terms of Service</a><br>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PhotoAI Restore",
+        "description": "Free online photo restoration and repair using AI technology",
+        "applicationCategory": "Photo Enhancement Tool",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "AI photo restoration",
+            "Old photo repair",
+            "Photo enhancement",
+            "Color restoration"
+        ]
+    }
+    </script>
+</body>
+</html>
